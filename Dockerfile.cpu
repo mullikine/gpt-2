@@ -4,6 +4,8 @@ ENV LANG=C.UTF-8
 RUN mkdir /gpt-2
 WORKDIR /gpt-2
 ADD . /gpt-2
+# RUN apt update
+# RUN apt install wget
 RUN pip3 install -r requirements.txt
 RUN python3 download_model.py 124M
 RUN python3 download_model.py 355M
