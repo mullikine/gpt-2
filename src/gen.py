@@ -134,8 +134,7 @@ vintage country music
 old tv shows
 humble and intelligent
 admirable
-swimming
-David and Marion
+Megan is more beautiful than any scenery.
 '''.split()
 len(seeds)
 
