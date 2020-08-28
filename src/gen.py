@@ -127,7 +127,7 @@ def random_item(array):
 random_chunk(all_poems[basenames[0]]['poem'], 2), titlecase_word(random_item(words))
 
 seeds = '''
-blue red
+She loves blue and red.
 She doesn't like tea and coffee.
 calm and unflappable
 vintage country music
@@ -135,7 +135,7 @@ old tv shows
 humble and intelligent
 admirable
 Megan is more beautiful than any scenery.
-'''.split()
+'''.split("\n")
 len(seeds)
 
 from utils.progress import progress
