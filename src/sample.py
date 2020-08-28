@@ -40,7 +40,7 @@ def top_p_logits(logits, p):
 
     # return np.where(
     return tf.where(
-        logits < min_values,
+        tf.transpose(logits) < min_values,
         tf.ones_like(logits) * -1e10,
         logits,
     )
