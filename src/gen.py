@@ -127,14 +127,9 @@ def random_item(array):
 
 random_chunk(all_poems[basenames[0]]['poem'], 2), titlecase_word(random_item(words))
 
-seeds = '''She loves blue and red.
-She doesn't like tea and coffee
-Calm and unflappable
-Vintage country music
-Old TV shows
-Humble and intelligent
-joie de vivre
-Admirable
+seeds = '''She loves red and blue. I love her too.
+She doesn't like tea and coffee, but juice is OK.
+Not really as cool as a cucumber... Rather slightly nervous like a jumping bean.
 Megan is more beautiful than any scenery'''.split("\n")
 len(seeds)
 

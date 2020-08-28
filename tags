@@ -68,7 +68,7 @@ merge_states	src/model.py	/^def merge_states(x):$/;"	f
 mlp	src/model.py	/^def mlp(x, scope, n_state, *, hparams):$/;"	f
 model	download_model.py	/^model = sys.argv[1]$/;"	v
 model	src/model.py	/^def model(hparams, X, past=None, scope='model', reuse=False):$/;"	f
-model_name	src/gen.py	/^model_name = '124M'$/;"	v
+model_name	src/gen.py	/^model_name = '1558M'$/;"	v
 models_dir	src/generate_unconditional_samples.py	/^    models_dir = os.path.expanduser(os.path.expandvars(models_dir))$/;"	v
 models_dir	src/interactive_conditional_samples.py	/^    models_dir = os.path.expanduser(os.path.expandvars(models_dir))$/;"	v
 multihead_attn	src/model.py	/^    def multihead_attn(q, k, v):$/;"	f	function:attn
