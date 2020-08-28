@@ -130,7 +130,7 @@ random_chunk(all_poems[basenames[0]]['poem'], 2), titlecase_word(random_item(wor
 seeds = '''She loves red and blue. I love her too.
 She doesn't like tea and coffee, but juice is OK.
 Not really as cool as a cucumber... Rather slightly nervous like a jumping bean.
-Megan is more beautiful than any scenery'''.split("\n")
+Megan is more beautiful than any scenery.'''.split("\n")
 len(seeds)
 
 from utils.progress import progress
