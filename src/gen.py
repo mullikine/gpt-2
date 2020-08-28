@@ -9,7 +9,7 @@ import model, sample, encoder
 
 # !ln -s ../models models # hack to make models "appear" in two places
 
-model_name = '117M'
+model_name = '124M'
 seed = None
 nsamples = 10
 batch_size = 10
@@ -19,7 +19,10 @@ top_k = 40 # 0 means no restrictions
 
 assert nsamples % batch_size == 0
 
-enc = encoder.get_encoder(model_name)
+from shanepy import *
+myembed(globals(), locals())
+
+enc = encoder.get_encoder(model_name, "models")
 hparams = model.default_hparams()
 with open(os.path.join('models', model_name, 'hparams.json')) as f:
     hparams.override_from_dict(json.load(f))
