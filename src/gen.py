@@ -127,14 +127,15 @@ def random_item(array):
 random_chunk(all_poems[basenames[0]]['poem'], 2), titlecase_word(random_item(words))
 
 seeds = '''
-blue red Megan
-calm Megan
-unflappable Megan
-nefarious Megan
-oblivion Megan
-quiver Megan
-solitude Megan
-sonorous Megan
+blue red
+calm
+vintage
+unflappable
+nefarious
+oblivion
+quiver
+solitude
+sonorous
 '''.split()
 len(seeds)
 
