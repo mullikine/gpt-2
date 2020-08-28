@@ -131,7 +131,7 @@ She loves blue and red.
 She doesn't like tea and coffee
 Calm and unflappable
 Vintage country music
-Old tv shows
+Old TV shows
 Humble and intelligent
 Admirable
 Megan is more beautiful than any scenery
