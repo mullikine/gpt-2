@@ -1,0 +1,1 @@
+cat generated.json| jq -r . > generated-124M-pretty.json
