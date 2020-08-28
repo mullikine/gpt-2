@@ -134,7 +134,7 @@ Calm and unflappable
 Vintage country music
 Old TV shows
 Humble and intelligent
-amazing voice
+joie de vivre
 Admirable
 Megan is more beautiful than any scenery
 '''.split("\n")
