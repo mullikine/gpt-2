@@ -128,14 +128,16 @@ random_chunk(all_poems[basenames[0]]['poem'], 2), titlecase_word(random_item(wor
 
 seeds = '''
 blue red
-calm
-vintage
-unflappable
+i dislike tea and coffee
+calm unflappable
+vintage country music
+old tv shows
 nefarious
-oblivion
-quiver
-solitude
-sonorous
+humble
+admirable
+swimming
+flowers
+David and Marion
 '''.split()
 len(seeds)
 
@@ -148,7 +150,7 @@ def generate(inspiration, seed):
     inspiration = remove_special(inspiration).strip()
     seed = titlecase_word(seed).strip()
 
-    raw_text = inspiration + '\n' + seed
+    raw_text = inspiration + '\n' + seed + '\n' + "I love Megan"
     context_tokens = enc.encode(raw_text)
     n_context = len(context_tokens)
 
