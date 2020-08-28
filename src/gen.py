@@ -136,8 +136,7 @@ Old TV shows
 Humble and intelligent
 joie de vivre
 Admirable
-Megan is more beautiful than any scenery
-'''.split("\n")
+Megan is more beautiful than any scenery'''.split("\n")
 len(seeds)
 
 from utils.progress import progress
