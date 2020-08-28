@@ -128,15 +128,13 @@ random_chunk(all_poems[basenames[0]]['poem'], 2), titlecase_word(random_item(wor
 
 seeds = '''
 blue red
-i dislike tea and coffee
-calm unflappable
+She doesn't like tea and coffee.
+calm and unflappable
 vintage country music
 old tv shows
-nefarious
-humble
+humble and intelligent
 admirable
 swimming
-flowers
 David and Marion
 '''.split()
 len(seeds)
