@@ -113,6 +113,7 @@ words = list(words)
 print(total_lines)
 
 def titlecase_word(word):
+    print(word)
     return word[0].upper() + word[1:]
 
 titlecase_word("carpenter's"), "carpenter's".title()
