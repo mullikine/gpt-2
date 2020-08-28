@@ -128,8 +128,8 @@ random_chunk(all_poems[basenames[0]]['poem'], 2), titlecase_word(random_item(wor
 
 seeds = '''
 blue red Megan
-ineffable Megan
-iridescent Megan
+calm Megan
+unflappable Megan
 nefarious Megan
 oblivion Megan
 quiver Megan
