@@ -19,8 +19,8 @@ top_k = 40 # 0 means no restrictions
 
 assert nsamples % batch_size == 0
 
-from shanepy import *
-myembed(globals(), locals())
+# from shanepy import *
+# myembed(globals(), locals())
 
 enc = encoder.get_encoder(model_name, "models")
 hparams = model.default_hparams()
@@ -40,6 +40,7 @@ sess = tf.InteractiveSession()
 context = tf.placeholder(tf.int32, [batch_size, None])
 np.random.seed(seed)
 tf.set_random_seed(seed)
+
 output = sample.sample_sequence(
     hparams=hparams, length=length,
     context=context,

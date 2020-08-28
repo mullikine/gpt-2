@@ -1,6 +1,7 @@
 import tensorflow as tf
 
 import model
+from shanepy import *
 
 def top_k_logits(logits, k):
     if k == 0:
@@ -51,6 +52,8 @@ def sample_sequence(*, hparams, length, start_token=None, batch_size=None, conte
         lm_output = model.model(hparams=hparams, X=tokens, past=past, reuse=tf.AUTO_REUSE)
 
         logits = lm_output['logits'][:, :, :hparams.n_vocab]
+
+        myembed(globals(), locals())
         presents = lm_output['present']
         presents.set_shape(model.past_shape(hparams=hparams, batch_size=batch_size))
         return {
