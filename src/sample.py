@@ -39,11 +39,12 @@ def top_p_logits(logits, p):
     # myembed(globals(), locals())
 
     # return np.where(
-    return tf.where(
+    
+    return tf.transpose(tf.where(
         tf.transpose(logits) < min_values,
         tf.ones_like(logits) * -1e10,
         logits,
-    )
+    ))
 
 
 def sample_sequence(*, hparams, length, start_token=None, batch_size=None, context=None, temperature=1, top_k=0, top_p=1):
