@@ -1,0 +1,1 @@
+cp -a "$MYGIT/kylemcdonald/gpt-2-poetry/Generate GPT-2.py" gen.py
