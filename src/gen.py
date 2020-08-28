@@ -89,6 +89,7 @@ all_poems = {}
 total_lines = 0
 words = set()
 # for fn in b('glob -b "poetry/*" | s chomp'):
+# for fn in map(lambda x: "poetry/" + x, os.listdir("poetry")):
 for fn in map(lambda x: "poetry/" + x, os.listdir("poetry")):
     with open(fn) as f:
         original = open(fn).read()
