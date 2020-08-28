@@ -13,7 +13,7 @@ from shanepy import *
 
 # !ln -s ../models models # hack to make models "appear" in two places
 
-model_name = '1558'
+model_name = '1558M'
 seed = None
 nsamples = 10
 batch_size = 10
