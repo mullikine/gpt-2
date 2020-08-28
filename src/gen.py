@@ -128,13 +128,13 @@ random_chunk(all_poems[basenames[0]]['poem'], 2), titlecase_word(random_item(wor
 
 seeds = '''
 She loves blue and red.
-She doesn't like tea and coffee.
-calm and unflappable
-vintage country music
-old tv shows
-humble and intelligent
-admirable
-Megan is more beautiful than any scenery.
+She doesn't like tea and coffee
+Calm and unflappable
+Vintage country music
+Old tv shows
+Humble and intelligent
+Admirable
+Megan is more beautiful than any scenery
 '''.split("\n")
 len(seeds)
 
