@@ -88,7 +88,8 @@ basenames = []
 all_poems = {}
 total_lines = 0
 words = set()
-for fn in b('glob -b "poetry/*" | s chomp'):
+# for fn in b('glob -b "poetry/*" | s chomp'):
+for fn in os.listdir("poetry"):
     with open(fn) as f:
         original = open(fn).read()
         text = remove_special(original).split('\n')
