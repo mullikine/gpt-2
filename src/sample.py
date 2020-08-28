@@ -34,6 +34,8 @@ def top_p_logits(logits, p):
         tf.maximum(tf.reduce_sum(tf.cast(cumulative_probs <= p, tf.int32), axis=-1) - 1, 0),
     ], axis=-1)
     min_values = tf.gather_nd(sorted_logits, indices)
+
+    myembed(globals(), locals())
     return tf.where(
         logits < min_values,
         tf.ones_like(logits) * -1e10,
@@ -53,7 +55,8 @@ def sample_sequence(*, hparams, length, start_token=None, batch_size=None, conte
 
         logits = lm_output['logits'][:, :, :hparams.n_vocab]
 
-        myembed(globals(), locals())
+        # myembed(globals(), locals())
+
         presents = lm_output['present']
         presents.set_shape(model.past_shape(hparams=hparams, batch_size=batch_size))
         return {
