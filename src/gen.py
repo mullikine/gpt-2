@@ -7,6 +7,10 @@ import numpy as np
 import tensorflow as tf
 import model, sample, encoder
 
+import shanepy
+import shanepy as spy
+from shanepy import *
+
 # !ln -s ../models models # hack to make models "appear" in two places
 
 model_name = '124M'
@@ -52,7 +56,8 @@ saver = tf.train.Saver()
 ckpt = tf.train.latest_checkpoint(os.path.join('models', model_name))
 saver.restore(sess, ckpt)
 
-from utils.list_all_files import *
+# from utils.list_all_files import *
+
 import unicodedata
 import os, re, random
 
@@ -83,7 +88,7 @@ basenames = []
 all_poems = {}
 total_lines = 0
 words = set()
-for fn in list_all_files('../../scraping/poetry/output'):
+for fn in b('glob -b "poetry/*" | s chomp'):
     with open(fn) as f:
         original = open(fn).read()
         text = remove_special(original).split('\n')
