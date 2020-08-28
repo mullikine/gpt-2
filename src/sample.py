@@ -1,5 +1,6 @@
 import tensorflow as tf
 
+import numpy as np
 import model
 from shanepy import *
 
@@ -35,7 +36,9 @@ def top_p_logits(logits, p):
     ], axis=-1)
     min_values = tf.gather_nd(sorted_logits, indices)
 
-    myembed(globals(), locals())
+    # myembed(globals(), locals())
+
+    # return np.where()
     return tf.where(
         logits < min_values,
         tf.ones_like(logits) * -1e10,
