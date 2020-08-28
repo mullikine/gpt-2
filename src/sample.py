@@ -38,7 +38,7 @@ def top_p_logits(logits, p):
 
     # myembed(globals(), locals())
 
-    # return np.where()
+    # return np.where(
     return tf.where(
         logits < min_values,
         tf.ones_like(logits) * -1e10,
