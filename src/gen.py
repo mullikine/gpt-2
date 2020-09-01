@@ -107,7 +107,12 @@ for fn in map(lambda x: "poetry/" + x, os.listdir("poetry")):
         total_lines += len(poem)
         poem = '\n'.join(poem)
         words.update([strip_word(e) for e in poem.split()])
-words.remove('')
+
+try:
+    words.remove('')
+except Exception:
+    pass
+
 words = list(words)
 
 print(total_lines)
