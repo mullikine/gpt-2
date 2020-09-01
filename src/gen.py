@@ -132,10 +132,10 @@ def random_item(array):
 
 random_chunk(all_poems[basenames[0]]['poem'], 2), titlecase_word(random_item(words))
 
-seeds = '''cold night
-green hills
-cloudy sky
-cold night. green hills. cloudy sky'''.split("\n")
+seeds = '''Solve a Rubik's cube
+A Rubik's cube
+The algorithm of a Rubik's cube
+A Rubik's cube has a faces and many colours'''.split("\n")
 len(seeds)
 
 from utils.progress import progress
