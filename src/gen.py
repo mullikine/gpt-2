@@ -132,10 +132,10 @@ def random_item(array):
 
 random_chunk(all_poems[basenames[0]]['poem'], 2), titlecase_word(random_item(words))
 
-seeds = '''She loves red and blue. I love her too.
-She doesn't like tea and coffee, but juice is OK.
-Not really as cool as a cucumber... Rather slightly nervous like a jumping bean.
-Megan is more beautiful than any scenery.'''.split("\n")
+seeds = '''cold night
+green hills
+cloudy sky
+cold night. green hills. cloudy sky'''.split("\n")
 len(seeds)
 
 from utils.progress import progress
@@ -147,7 +147,7 @@ def generate(inspiration, seed):
     inspiration = remove_special(inspiration).strip()
     seed = titlecase_word(seed).strip()
 
-    raw_text = inspiration + '\n' + seed + '\n' + "I love Megan"
+    raw_text = inspiration + '\n' + seed
     context_tokens = enc.encode(raw_text)
     n_context = len(context_tokens)
 
